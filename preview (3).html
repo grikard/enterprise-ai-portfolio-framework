@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Primary metadata -->
+<title>Enterprise AI Portfolio — Workflow Economics Capital Allocation Framework | Gary Rikard</title>
+<meta name="title" content="Enterprise AI Portfolio — Workflow Economics Capital Allocation Framework | Gary Rikard">
+<meta name="description" content="An interactive board-level capital allocation framework for enterprise AI portfolios, workflow economics, ROIC opportunity, revenue intelligence, and AI readiness.">
+<meta name="author" content="Gary Rikard">
+<meta name="creator" content="Gary Rikard">
+<meta name="publisher" content="Gary Rikard">
+<meta name="keywords" content="enterprise AI, workflow economics, AI portfolio, ROIC, capital allocation, Revenue Intelligence, AI readiness, board governance, Salesforce, Agentforce, Data Cloud">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://grikard.github.io/enterprise-ai-portfolio-framework/">
+
+<!-- Open Graph / LinkedIn / Substack link previews -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://grikard.github.io/enterprise-ai-portfolio-framework/">
+<meta property="og:title" content="Enterprise AI Portfolio — Workflow Economics Framework | Gary Rikard">
+<meta property="og:description" content="Interactive board-level framework for sequencing enterprise AI investment by ROIC, workflow economics, risk, and readiness.">
+<meta property="og:site_name" content="Gary Rikard">
+<meta property="og:locale" content="en_US">
+
+<!-- X / Twitter preview metadata -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Enterprise AI Portfolio — Workflow Economics Framework | Gary Rikard">
+<meta name="twitter:description" content="Interactive capital allocation framework for enterprise AI portfolios, workflow economics, and board readiness.">
+
+<!-- Structured data for search engines -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Enterprise AI Portfolio — Workflow Economics Framework",
+  "description": "Interactive board-level capital allocation framework for enterprise AI portfolios, workflow economics, ROIC opportunity, revenue intelligence, and AI readiness.",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "Web",
+  "author": {
+    "@type": "Person",
+    "name": "Gary Rikard"
+  },
+  "creator": {
+    "@type": "Person",
+    "name": "Gary Rikard"
+  },
+  "url": "https://grikard.github.io/enterprise-ai-portfolio-framework/"
+}
+</script>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;background:#f4f2ed;padding:24px;min-height:100vh}
+.wrap{max-width:1100px;margin:0 auto;background:#fff;border-radius:12px;border:.5px solid #d3d1c7;overflow:hidden;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.hdr{background:#111827;padding:20px 32px}
+.hdr-tag{font-size:10px;letter-spacing:.09em;color:#6b7280;margin-bottom:6px}
+.hdr-title{font-size:22px;font-weight:500;color:#fff;margin-bottom:4px}
+.hdr-sub{font-size:12px;color:#9ca3af;line-height:1.5}
+.tabs{display:flex;border-bottom:1px solid #e5e7eb;background:#fff;overflow-x:auto}
+.tab{padding:12px 20px;font-size:13px;color:#6b7280;background:none;border:none;border-bottom:2.5px solid transparent;cursor:pointer;white-space:nowrap;font-family:inherit;transition:all .15s}
+.tab.on{color:#111827;border-bottom-color:#111827;font-weight:500}
+.tab:hover:not(.on){color:#374151}
+.content{padding:28px 32px}
+.panel{display:none}
+.panel.on{display:block}
+.mc{background:#f9fafb;border-radius:8px;padding:12px 14px;border:.5px solid #e5e7eb}
+.ml{font-size:11px;color:#6b7280;margin-bottom:4px;letter-spacing:.03em}
+.mv{font-size:20px;font-weight:500;color:#111827}
+.ms{font-size:11px;color:#6b7280;margin-top:2px}
+.lv{display:flex;gap:6px;margin-bottom:14px;flex-wrap:wrap}
+.lb{padding:5px 13px;font-size:12px;border:1px solid #d1d5db;border-radius:5px;cursor:pointer;background:#fff;color:#6b7280;font-family:inherit;transition:all .15s}
+.lb.on{background:#111827;color:#fff;border-color:#111827;font-weight:500}
+table{width:100%;border-collapse:collapse;font-size:12px}
+th{text-align:left;padding:8px 10px;font-size:10px;font-weight:500;color:#6b7280;letter-spacing:.05em;border-bottom:1px solid #e5e7eb;white-space:nowrap;background:#f9fafb}
+td{padding:8px 10px;border-bottom:.5px solid #f3f4f6;vertical-align:top;color:#111827;line-height:1.4}
+.dh td{font-size:10px;font-weight:500;letter-spacing:.05em;padding:10px 10px 5px;color:#6b7280;background:#f4f2ed;border-bottom:.5px solid #e5e7eb}
+.d1{background:rgba(5,150,105,.04)}
+.d2{background:rgba(180,83,9,.04)}
+.d3{background:rgba(59,130,246,.04)}
+.d4{background:rgba(107,114,128,.04)}
+.dri{background:rgba(83,74,183,.04)}
+.dmf{background:rgba(107,114,128,.03)}
+.pill{display:inline-block;padding:2px 7px;border-radius:10px;font-size:10px;font-weight:500;white-space:nowrap}
+.p1{background:rgba(5,150,105,.12);color:#065f46}
+.p2{background:rgba(180,83,9,.12);color:#92400e}
+.p3{background:rgba(59,130,246,.12);color:#1e40af}
+.p4{background:rgba(107,114,128,.15);color:#374151}
+.pri{background:rgba(83,74,183,.12);color:#3730a3}
+.roic-hi{color:#059669;font-weight:500}
+.roic-md{color:#b45309;font-weight:500}
+.roic-lo{color:#6b7280}
+.risk-lo{color:#059669}
+.risk-md{color:#b45309}
+.risk-hi{color:#dc2626}
+.act-g{font-size:11px;color:#059669}
+.act-a{font-size:11px;color:#b45309}
+.act-p{font-size:11px;color:#4f46e5}
+.act-n{font-size:11px;color:#6b7280}
+.cq{display:flex;align-items:flex-start;gap:10px;padding:10px 0;border-bottom:.5px solid #f3f4f6}
+.cq:last-child{border-bottom:none}
+.cb{width:18px;height:18px;border:1px solid #d1d5db;border-radius:4px;cursor:pointer;flex-shrink:0;margin-top:2px;display:flex;align-items:center;justify-content:center;font-size:11px;color:#059669;background:#fff;transition:all .15s}
+.cb.done{background:#d1fae5;border-color:#059669}
+.score-box{margin-top:12px;padding:12px 16px;border-radius:8px;font-size:13px;background:#f9fafb;border:1px solid #e5e7eb;transition:all .3s}
+.tier-card{border:1px solid #e5e7eb;border-radius:8px;padding:14px 16px;margin-bottom:10px}
+.tier-head{font-size:12px;font-weight:500;color:#111827;margin-bottom:4px}
+.tier-body{font-size:12px;color:#374151;line-height:1.5}
+.cleg{display:flex;gap:14px;margin-bottom:10px;font-size:12px;color:#6b7280;flex-wrap:wrap}
+.cli{display:flex;align-items:center;gap:5px}
+.fnote{font-size:10px;color:#9ca3af;margin-top:14px;line-height:1.6;border-top:.5px solid #f3f4f6;padding-top:10px}
+
+.author-footer{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+  padding:14px 32px;
+  border-top:1px solid #e5e7eb;
+  background:#f9fafb;
+  color:#6b7280;
+  font-size:11px;
+  line-height:1.5;
+}
+.author-footer strong{color:#111827;font-weight:500}
+.author-footer .af-right{text-align:right}
+@media(max-width:760px){
+  .author-footer{flex-direction:column;align-items:flex-start;padding:14px 18px}
+  .author-footer .af-right{text-align:left}
+}
+
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="hdr">
+  <p class="hdr-tag">ENTERPRISE AI PORTFOLIO · WORKFLOW ECONOMICS · BOARD-LEVEL CAPITAL ALLOCATION</p>
+  <p class="hdr-title">Enterprise AI Portfolio — Workflow Economics Framework</p>
+  <p class="hdr-sub">Research synthesis: PitchBook, MIT Sloan / Harvard / BCG, McKinsey, Apple, Google, NVIDIA / CaP-X, Marion et al. · April 2026</p>
+  <p class="hdr-sub" style="margin-top:8px;color:#d1d5db">Created by <strong style="color:#fff;font-weight:500">Gary Rikard, MBA</strong></p>
+</div>
+
+<div class="tabs">
+  <button class="tab on" onclick="pS('ct',this)">Capital thesis</button>
+  <button class="tab" onclick="pS('pm',this)">Portfolio map</button>
+  <button class="tab" onclick="pS('ro',this)">ROIC opportunity</button>
+  <button class="tab" onclick="pS('we',this)">Workflow economics</button>
+  <button class="tab" onclick="pS('rc',this)">Board readiness</button>
+</div>
+
+<div class="content">
+
+<!-- TAB 1: CAPITAL THESIS -->
+<div id="pct" class="panel on">
+  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:20px">
+    <div class="mc"><div class="ml">Organizations using AI</div><div class="mv">78%</div><div class="ms">McKinsey 2024 · 1,491 respondents</div></div>
+    <div class="mc"><div class="ml">Not seeing EBIT impact</div><div class="mv">&gt;80%</div><div class="ms">Despite significant technology spend</div></div>
+    <div class="mc"><div class="ml">Productivity gain inside frontier</div><div class="mv">+40%</div><div class="ms">MIT Sloan / BCG · 700+ consultants</div></div>
+    <div class="mc"><div class="ml">Performance drop outside frontier</div><div class="mv">−19pp</div><div class="ms">When AI deployed beyond capability edge</div></div>
+    <div class="mc"><div class="ml">Revenue uplift per workflow unit</div><div class="mv">8×</div><div class="ms">Seat → outcome pricing (PitchBook)</div></div>
+    <div class="mc"><div class="ml">Training data needed with curation</div><div class="mv">30%</div><div class="ms">Quality beats volume (Marion et al.)</div></div>
+  </div>
+
+  <div style="border:1px solid #e5e7eb;border-radius:8px;padding:16px 20px;margin-bottom:16px">
+    <div style="font-size:11px;color:#6b7280;letter-spacing:.05em;margin-bottom:12px">FOUR-DIMENSION SIGNAL THRESHOLD — displacement occurs when all four are favorable</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <div style="border:1px solid #e5e7eb;border-radius:6px;padding:10px 12px"><div style="font-size:12px;font-weight:500;margin-bottom:3px">1 · Cognitive fidelity required</div><div style="font-size:11px;color:#6b7280;line-height:1.5">How nuanced is the judgment? How catastrophic is an error? Workflow and error consequence scores.</div></div>
+      <div style="border:1px solid #e5e7eb;border-radius:6px;padding:10px 12px"><div style="font-size:12px;font-weight:500;margin-bottom:3px">2 · Compositional depth</div><div style="font-size:11px;color:#6b7280;line-height:1.5">How many sequential, globally-coherent steps must execute correctly? Collapse regime from Apple research.</div></div>
+      <div style="border:1px solid #e5e7eb;border-radius:6px;padding:10px 12px"><div style="font-size:12px;font-weight:500;margin-bottom:3px">3 · Training distribution coverage</div><div style="font-size:11px;color:#6b7280;line-height:1.5">How well-represented is this workflow's constraint structure in model training data? Proprietary data moat.</div></div>
+      <div style="border:1px solid #e5e7eb;border-radius:6px;padding:10px 12px"><div style="font-size:12px;font-weight:500;margin-bottom:3px">4 · Organizational readiness</div><div style="font-size:11px;color:#6b7280;line-height:1.5">Are workflows redesigned? Is data AI-ready? Is the human-in-the-loop designed for the jagged frontier?</div></div>
+    </div>
+  </div>
+
+  <div style="border:1px solid #e5e7eb;border-radius:8px;padding:14px 18px">
+    <div style="font-size:11px;color:#6b7280;letter-spacing:.05em;margin-bottom:10px">RESEARCH PROVENANCE · EIGHT SOURCES · SIX INSTITUTIONS</div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:6px">
+      <div style="font-size:12px;padding:6px 8px;border-radius:4px;background:#f9fafb"><strong>PitchBook</strong> · SaS thesis · 8× revenue uplift · 10 structural moats</div>
+      <div style="font-size:12px;padding:6px 8px;border-radius:4px;background:#f9fafb"><strong>Google DeepMind</strong> · AI co-scientist · test-time compute scaling</div>
+      <div style="font-size:12px;padding:6px 8px;border-radius:4px;background:#f9fafb"><strong>Apple</strong> · Illusion of Thinking · three regimes · collapse boundary</div>
+      <div style="font-size:12px;padding:6px 8px;border-radius:4px;background:#f9fafb"><strong>NVIDIA</strong> · Hymba · hybrid SLM · 11× cache reduction · on-premise</div>
+      <div style="font-size:12px;padding:6px 8px;border-radius:4px;background:#f9fafb"><strong>Marion et al.</strong> · 30% curated data beats 100% raw · data = performance</div>
+      <div style="font-size:12px;padding:6px 8px;border-radius:4px;background:#f9fafb"><strong>McKinsey</strong> · workflow redesign = #1 EBIT driver · only 21% have done it</div>
+      <div style="font-size:12px;padding:6px 8px;border-radius:4px;background:#f9fafb"><strong>MIT Sloan</strong> · jagged frontier · ±40%/−19pp · three pre-conditions</div>
+      <div style="font-size:12px;padding:6px 8px;border-radius:4px;background:#f9fafb"><strong>CaP-X · Berkeley / Stanford / NVIDIA</strong> · Physical AI · 4th wave</div>
+    </div>
+  </div>
+</div>
+
+<!-- TAB 2: PORTFOLIO MAP -->
+<div id="ppm" class="panel">
+  <p style="font-size:13px;color:#6b7280;margin:0 0 1rem;line-height:1.6">Four displacement domains mapped against signal threshold and proximity to displacement. Physical AI emerges as a fourth domain below the digital frontier. Click any workflow dot to explore.</p>
+  <svg width="100%" viewBox="0 0 680 480" style="display:block">
+    <defs><marker id="pma" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker></defs>
+    <rect x="80" y="50" width="240" height="140" fill="#059669" fill-opacity=".06"/>
+    <rect x="320" y="50" width="240" height="140" fill="#b45309" fill-opacity=".06"/>
+    <rect x="80" y="190" width="240" height="140" fill="#2563eb" fill-opacity=".05"/>
+    <rect x="320" y="190" width="240" height="140" fill="#6b7280" fill-opacity=".06"/>
+    <rect x="80" y="350" width="480" height="70" fill="#6b7280" fill-opacity=".04" stroke="#d1d5db" stroke-width=".5" stroke-dasharray="5 3"/>
+    <rect x="80" y="50" width="480" height="280" fill="none" stroke="#d1d5db" stroke-width=".5"/>
+    <line x1="320" y1="50" x2="320" y2="330" stroke="#d1d5db" stroke-width=".5" stroke-dasharray="4 3"/>
+    <line x1="80" y1="190" x2="560" y2="190" stroke="#d1d5db" stroke-width=".5" stroke-dasharray="4 3"/>
+    <text x="200" y="72" text-anchor="middle" font-size="9" font-weight="600" fill="#065f46" letter-spacing=".06em" font-family="sans-serif">AUTOMATE NOW</text>
+    <text x="440" y="72" text-anchor="middle" font-size="9" font-weight="600" fill="#92400e" letter-spacing=".06em" font-family="sans-serif">BUILD &amp; DEFEND</text>
+    <text x="200" y="210" text-anchor="middle" font-size="9" font-weight="600" fill="#1e40af" letter-spacing=".06em" font-family="sans-serif">SEQUENCE NEXT</text>
+    <text x="440" y="210" text-anchor="middle" font-size="9" font-weight="600" fill="#374151" letter-spacing=".06em" font-family="sans-serif">PROTECT &amp; INVEST</text>
+    <text x="200" y="365" text-anchor="middle" font-size="9" font-weight="600" fill="#374151" letter-spacing=".06em" font-family="sans-serif">PHYSICAL AI · EMERGING 2026–2028</text>
+    <text x="72" y="56" font-size="10" fill="#6b7280" text-anchor="end" font-family="sans-serif">Near</text>
+    <line x1="76" y1="322" x2="76" y2="58" stroke="#d1d5db" stroke-width=".5" marker-end="url(#pma)"/>
+    <text x="72" y="328" font-size="10" fill="#6b7280" text-anchor="end" font-family="sans-serif">Far</text>
+    <line x1="80" y1="445" x2="555" y2="445" stroke="#d1d5db" stroke-width=".5" marker-end="url(#pma)"/>
+    <text x="80" y="460" font-size="10" fill="#6b7280" font-family="sans-serif">Low signal threshold</text>
+    <text x="558" y="460" font-size="10" fill="#6b7280" text-anchor="end" font-family="sans-serif">High signal threshold</text>
+    <path d="M80,148 Q182,130 318,162 Q416,178 560,148" fill="none" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="6 3" opacity=".6"/>
+    <text x="562" y="145" font-size="9" fill="#dc2626" opacity=".8" font-family="sans-serif">current threshold</text>
+    <circle cx="122" cy="72" r="5.5" fill="#059669" opacity=".85"/>
+    <text x="130" y="76" font-size="10" fill="#374151" font-family="sans-serif">Data entry / ETL</text>
+    <circle cx="148" cy="88" r="5.5" fill="#059669" opacity=".85"/>
+    <text x="156" y="92" font-size="10" fill="#374151" font-family="sans-serif">Invoice &amp; AP processing</text>
+    <circle cx="176" cy="104" r="5.5" fill="#059669" opacity=".85"/>
+    <text x="184" y="108" font-size="10" fill="#374151" font-family="sans-serif">Tier 1 support</text>
+    <circle cx="260" cy="143" r="5.5" fill="#059669" opacity=".75"/>
+    <text x="268" y="140" font-size="10" fill="#374151" font-family="sans-serif">Code gen (standard)</text>
+    <circle cx="148" cy="124" r="5.5" fill="#4f46e5" opacity=".75"/>
+    <text x="156" y="120" font-size="10" fill="#374151" font-family="sans-serif">Revenue intelligence</text>
+    <circle cx="426" cy="158" r="5.5" fill="#b45309" opacity=".85"/>
+    <text x="434" y="155" font-size="10" fill="#374151" font-family="sans-serif">Contract analysis</text>
+    <circle cx="370" cy="172" r="5.5" fill="#b45309" opacity=".85"/>
+    <text x="280" y="184" font-size="10" fill="#374151" font-family="sans-serif">Compliance monitoring</text>
+    <circle cx="398" cy="238" r="5.5" fill="#6b7280" opacity=".8"/>
+    <text x="406" y="235" font-size="10" fill="#374151" font-family="sans-serif">Research synthesis</text>
+    <circle cx="236" cy="248" r="5.5" fill="#2563eb" opacity=".75"/>
+    <text x="244" y="245" font-size="10" fill="#374151" font-family="sans-serif">Complex code review</text>
+    <circle cx="464" cy="282" r="5.5" fill="#6b7280" opacity=".8"/>
+    <text x="472" y="279" font-size="10" fill="#374151" font-family="sans-serif">Financial audit</text>
+    <circle cx="512" cy="312" r="5.5" fill="#6b7280" opacity=".8"/>
+    <text x="422" y="322" font-size="10" fill="#374151" font-family="sans-serif">Strategic M&amp;A analysis</text>
+    <circle cx="390" cy="375" r="5" fill="#6b7280" opacity=".6" stroke="#6b7280" stroke-width="1" stroke-dasharray="3 2"/>
+    <text x="398" y="372" font-size="10" fill="#374151" font-family="sans-serif">Vision inspection</text>
+    <circle cx="450" cy="390" r="5" fill="#6b7280" opacity=".5" stroke="#6b7280" stroke-width="1" stroke-dasharray="3 2"/>
+    <text x="458" y="387" font-size="10" fill="#374151" font-family="sans-serif">Pick-and-place</text>
+  </svg>
+  <div style="display:flex;gap:14px;margin-top:8px;font-size:12px;color:#6b7280;flex-wrap:wrap">
+    <span style="display:flex;align-items:center;gap:5px"><span style="width:9px;height:9px;border-radius:50%;background:#059669;display:inline-block"></span>Automate now</span>
+    <span style="display:flex;align-items:center;gap:5px"><span style="width:9px;height:9px;border-radius:50%;background:#b45309;display:inline-block"></span>Build &amp; defend</span>
+    <span style="display:flex;align-items:center;gap:5px"><span style="width:9px;height:9px;border-radius:50%;background:#2563eb;display:inline-block"></span>Sequence next</span>
+    <span style="display:flex;align-items:center;gap:5px"><span style="width:9px;height:9px;border-radius:50%;background:#4f46e5;display:inline-block"></span>Revenue intelligence</span>
+    <span style="display:flex;align-items:center;gap:5px"><span style="width:9px;height:9px;border-radius:50%;background:#6b7280;display:inline-block"></span>Protect &amp; invest</span>
+    <span style="display:flex;align-items:center;gap:5px"><span style="width:18px;height:0;border-top:1.5px dashed #dc2626;display:inline-block"></span>Displacement threshold</span>
+  </div>
+</div>
+
+<!-- TAB 3: ROIC OPPORTUNITY -->
+<div id="pro" class="panel">
+  <p style="font-size:13px;color:#6b7280;margin:0 0 .75rem;line-height:1.6">ROIC multiple vs. investment horizon. Bubble size = confidence level. Priority zone: top-left — high returns, short timelines. Revenue Intelligence shown separately — different equation (revenue amplification, not cost reduction).</p>
+  <div class="cleg">
+    <span class="cli"><span style="width:10px;height:10px;border-radius:2px;background:#059669;display:inline-block"></span>Automate now</span>
+    <span class="cli"><span style="width:10px;height:10px;border-radius:2px;background:#b45309;display:inline-block"></span>Build &amp; defend</span>
+    <span class="cli"><span style="width:10px;height:10px;border-radius:2px;background:#4f46e5;display:inline-block"></span>Revenue intelligence</span>
+    <span class="cli"><span style="width:10px;height:10px;border-radius:2px;background:#6b7280;display:inline-block"></span>Protect / Physical AI</span>
+  </div>
+  <div style="position:relative;width:100%;height:340px"><canvas id="roic-c"></canvas></div>
+  <p style="font-size:11px;color:#9ca3af;margin:8px 0 0;line-height:1.6">Revenue Intelligence ROIC multiples are multiplicative on revenue base. Physical AI horizon reflects compliant-hardware structured tasks only (CaP-X 2026). Strategic M&amp;A excluded — human judgment non-substitutable at current capability levels.</p>
+</div>
+
+<!-- TAB 4: WORKFLOW ECONOMICS -->
+<div id="pwe" class="panel">
+  <div class="lv">
+    <button class="lb on" onclick="wL('cfo',this)">CFO lens</button>
+    <button class="lb" onclick="wL('cto',this)">CTO / CIO lens</button>
+    <button class="lb" onclick="wL('risk',this)">Risk lens</button>
+  </div>
+  <div style="overflow-x:auto">
+    <div id="wl-cfo">
+      <table>
+        <thead><tr><th>Workflow</th><th>Domain</th><th>ROIC type</th><th>AI cost/unit</th><th>Human cost/unit</th><th>Net economics</th><th>Payback</th><th>Action</th></tr></thead>
+        <tbody>
+          <tr class="dh"><td colspan="8">DIGITAL KNOWLEDGE WORK — cost displacement</td></tr>
+          <tr class="d1"><td>Data entry / ETL</td><td><span class="pill p1">Automate now</span></td><td>Cost saving</td><td>$0.50</td><td>$8</td><td class="roic-hi">94% reduction</td><td>9 mo</td><td class="act-g">Deploy now</td></tr>
+          <tr class="d1"><td>Invoice &amp; AP processing</td><td><span class="pill p1">Automate now</span></td><td>Cost saving</td><td>$2</td><td>$25</td><td class="roic-hi">92% reduction</td><td>15 mo</td><td class="act-g">Deploy now</td></tr>
+          <tr class="d1"><td>Tier 1 customer support</td><td><span class="pill p1">Automate now</span></td><td>Cost saving</td><td>$3</td><td>$30</td><td class="roic-hi">90% reduction</td><td>18 mo</td><td class="act-g">Deploy now</td></tr>
+          <tr class="d1"><td>Document generation</td><td><span class="pill p1">Automate now</span></td><td>Cost saving</td><td>$1.50</td><td>$20</td><td class="roic-hi">93% reduction</td><td>15 mo</td><td class="act-g">Deploy now</td></tr>
+          <tr class="d1"><td>Code gen (standard)</td><td><span class="pill p1">Automate now</span></td><td>Cost saving</td><td>$4</td><td>$35</td><td class="roic-hi">89% reduction</td><td>21 mo</td><td class="act-g">Deploy now</td></tr>
+          <tr class="d2"><td>Compliance monitoring</td><td><span class="pill p2">Build &amp; defend</span></td><td>Cost saving</td><td>$8</td><td>$35</td><td class="roic-md">77% reduction</td><td>24 mo</td><td class="act-a">Invest in data moat</td></tr>
+          <tr class="d2"><td>Contract analysis</td><td><span class="pill p2">Build &amp; defend</span></td><td>Cost saving</td><td>$15</td><td>$80</td><td class="roic-md">81% reduction</td><td>30 mo</td><td class="act-a">Invest in data moat</td></tr>
+          <tr class="dh"><td colspan="8">REVENUE INTELLIGENCE — revenue amplification (different equation: uplift × margin / investment)</td></tr>
+          <tr class="dri"><td>CRM hygiene &amp; enrichment</td><td><span class="pill pri">Rev enabler</span></td><td>Rev enabler</td><td>$0.10/record</td><td>$4.00/record</td><td class="roic-hi">97% + quality ↑</td><td>6 mo</td><td class="act-p">Deploy now</td></tr>
+          <tr class="dri"><td>Lead scoring &amp; routing</td><td><span class="pill pri">Rev amplify</span></td><td>Rev amplify</td><td>$0.50/lead</td><td>$12.00/lead</td><td class="roic-hi">+15–40% conv.</td><td>12 mo</td><td class="act-p">Deploy now</td></tr>
+          <tr class="dri"><td>Pipeline forecasting</td><td><span class="pill pri">Rev amplify</span></td><td>Rev amplify</td><td>$2K/mo</td><td>$45K FTE</td><td class="roic-hi">50–70× ROIC</td><td>3–6 mo</td><td class="act-p">Deploy now</td></tr>
+          <tr class="dri"><td>Churn prediction + intervention</td><td><span class="pill pri">Rev protect</span></td><td>Rev protect</td><td>$5K/mo</td><td>Cost of churn</td><td class="roic-hi">5–20× retention</td><td>6–12 mo</td><td class="act-p">Deploy now</td></tr>
+          <tr class="dri"><td>Pricing optimization (known)</td><td><span class="pill p2">Build &amp; defend</span></td><td>Rev amplify</td><td>$10K/mo</td><td>$200K+ analyst</td><td class="roic-md">2–8% margin exp.</td><td>12–18 mo</td><td class="act-a">Build &amp; deploy</td></tr>
+          <tr class="dri"><td>Strategic pricing (novel markets)</td><td><span class="pill p2">Build &amp; defend</span></td><td>Rev amplify</td><td>$20K/mo</td><td>$400K+ team</td><td class="roic-lo">High upside, risk</td><td>24–36 mo</td><td class="act-a">HITL mandatory</td></tr>
+          <tr class="dh"><td colspan="8">MANUFACTURING ROBOTICS — physical displacement</td></tr>
+          <tr class="dmf"><td>Vision quality inspection (T1)</td><td><span class="pill p1">Pilot now</span></td><td>Cost saving</td><td>$0.10 + hw</td><td>$2.50/unit</td><td class="roic-hi">~91% reduction</td><td>18–24 mo</td><td class="act-g">Pilot now</td></tr>
+          <tr class="dmf"><td>Pick-and-place structured (T1)</td><td><span class="pill p1">Pilot now</span></td><td>Cost saving</td><td>$0.001 + hw</td><td>$0.80/cycle</td><td class="roic-hi">~96%*</td><td>30–36 mo</td><td class="act-a">Compliant hw only</td></tr>
+          <tr class="dmf"><td>Semi-structured assembly (T2)</td><td><span class="pill p2">Build toward</span></td><td>Cost saving</td><td>TBD</td><td>$1.50/cycle</td><td class="roic-lo">2027–2029</td><td>36–48 mo</td><td class="act-a">Invest task data</td></tr>
+          <tr class="dmf"><td>General flex manufacturing (T3)</td><td><span class="pill p4">Monitor</span></td><td>Future</td><td>Unknown</td><td>Variable</td><td class="roic-lo">2029–2033+</td><td>—</td><td class="act-n">Monitor arch. curve</td></tr>
+        </tbody>
+      </table>
+      <p class="fnote">* Pick-and-place: compliance-dependent (CaP-X 2026). Cross-embodiment validation required. Revenue Intelligence ROIC is multiplicative on revenue base. All figures indicative.</p>
+    </div>
+    <div id="wl-cto" style="display:none">
+      <table>
+        <thead><tr><th>Workflow</th><th>Domain</th><th>Comp. depth</th><th>Training coverage</th><th>Best architecture</th><th>Data readiness</th><th>Key constraint</th></tr></thead>
+        <tbody>
+          <tr class="dh"><td colspan="7">DIGITAL KNOWLEDGE WORK</td></tr>
+          <tr class="d1"><td>Data entry / ETL</td><td><span class="pill p1">Automate now</span></td><td class="risk-lo">Low</td><td class="risk-lo">Very high</td><td>SLM / standard LLM</td><td class="risk-lo">Ready</td><td style="font-size:11px">None significant</td></tr>
+          <tr class="d1"><td>Invoice &amp; AP</td><td><span class="pill p1">Automate now</span></td><td class="risk-lo">Low</td><td class="risk-lo">High</td><td>Standard LLM / SLM</td><td class="risk-lo">Ready</td><td style="font-size:11px">None significant</td></tr>
+          <tr class="d1"><td>Tier 1 support</td><td><span class="pill p1">Automate now</span></td><td class="risk-lo">Low–med</td><td class="risk-lo">High</td><td>LLM + RAG agent</td><td class="risk-md">Mostly ready</td><td style="font-size:11px">Escalation path design</td></tr>
+          <tr class="d2"><td>Compliance monitoring</td><td><span class="pill p2">Build &amp; defend</span></td><td class="risk-md">Medium</td><td class="risk-md">Medium</td><td>Multi-agent + SLM</td><td class="risk-md">Partial — curate</td><td style="font-size:11px">Regulatory corpus quality</td></tr>
+          <tr class="d2"><td>Contract analysis</td><td><span class="pill p2">Build &amp; defend</span></td><td class="risk-md">Med–high</td><td class="risk-md">Medium</td><td>Multi-agent + domain SLM</td><td class="risk-md">Partial — curate</td><td style="font-size:11px">Proprietary contract corpus</td></tr>
+          <tr class="dh"><td colspan="7">REVENUE INTELLIGENCE</td></tr>
+          <tr class="dri"><td>Pipeline forecasting</td><td><span class="pill pri">Deploy now</span></td><td class="risk-lo">Low</td><td class="risk-lo">High</td><td>Analytical AI + LLM</td><td class="risk-lo">CRM data required</td><td style="font-size:11px">CRM hygiene first</td></tr>
+          <tr class="dri"><td>Lead scoring</td><td><span class="pill pri">Deploy now</span></td><td class="risk-lo">Low</td><td class="risk-lo">Very high</td><td>Analytical AI / ML</td><td class="risk-lo">Ready if CRM clean</td><td style="font-size:11px">Signal data completeness</td></tr>
+          <tr class="dri"><td>Churn prediction</td><td><span class="pill pri">Deploy now</span></td><td class="risk-lo">Low–med</td><td class="risk-lo">High</td><td>Analytical AI + LLM alerts</td><td class="risk-md">Usage + product data</td><td style="font-size:11px">Product telemetry integration</td></tr>
+          <tr class="dri"><td>Strategic pricing</td><td><span class="pill p2">Build &amp; defend</span></td><td class="risk-hi">High</td><td class="risk-md">Medium</td><td>Multi-agent + HITL</td><td class="risk-md">Partial</td><td style="font-size:11px">Jagged frontier — HITL mandatory</td></tr>
+          <tr class="dh"><td colspan="7">MANUFACTURING ROBOTICS</td></tr>
+          <tr class="dmf"><td>Vision inspection (T1)</td><td><span class="pill p1">Pilot now</span></td><td class="risk-lo">Low</td><td class="risk-lo">High</td><td>Vision AI / VLA (edge SLM)</td><td class="risk-md">Labeled defect images</td><td style="font-size:11px">Camera + lighting calibration</td></tr>
+          <tr class="dmf"><td>Pick-and-place (T1)</td><td><span class="pill p1">Pilot now</span></td><td class="risk-lo">Low–med</td><td class="risk-md">Medium</td><td>CaP-RL 7B (Hymba-class edge)</td><td class="risk-md">Sim task data required</td><td style="font-size:11px;color:#dc2626">Compliant hardware required</td></tr>
+          <tr class="dmf"><td>Semi-structured assembly (T2)</td><td><span class="pill p2">Build toward</span></td><td class="risk-hi">High</td><td class="risk-md">Medium</td><td>CaP-Agent0 class</td><td class="risk-lo">Build sim env now</td><td style="font-size:11px">Sim-to-real gap unresolved</td></tr>
+          <tr class="dmf"><td>General flex mfg (T3)</td><td><span class="pill p4">Monitor</span></td><td class="risk-hi">Very high</td><td class="risk-lo">Low</td><td>Successor architecture TBD</td><td class="risk-lo">Identify &amp; protect IP</td><td style="font-size:11px">Architecture regime question</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div id="wl-risk" style="display:none">
+      <table>
+        <thead><tr><th>Workflow</th><th>Domain</th><th>Error consequence</th><th>Reversibility</th><th>Frontier position</th><th>Governance required</th></tr></thead>
+        <tbody>
+          <tr class="dh"><td colspan="6">DIGITAL KNOWLEDGE WORK</td></tr>
+          <tr class="d1"><td>Data entry / ETL</td><td><span class="pill p1">Automate now</span></td><td class="risk-lo">Low — recoverable</td><td class="risk-lo">Fully reversible</td><td class="risk-lo">Well inside frontier</td><td style="font-size:11px">Spot-check sampling protocol</td></tr>
+          <tr class="d1"><td>Tier 1 support</td><td><span class="pill p1">Automate now</span></td><td class="risk-md">Medium — brand</td><td class="risk-md">Moderate</td><td class="risk-lo">Inside frontier</td><td style="font-size:11px">Human escalation always available</td></tr>
+          <tr class="d2"><td>Compliance monitoring</td><td><span class="pill p2">Build &amp; defend</span></td><td class="risk-hi">High — regulatory</td><td class="risk-hi">Difficult</td><td class="risk-md">At boundary</td><td style="font-size:11px">Expert review all outputs — mandatory</td></tr>
+          <tr class="d2"><td>Contract analysis</td><td><span class="pill p2">Build &amp; defend</span></td><td class="risk-hi">High — legal</td><td class="risk-hi">Difficult</td><td class="risk-md">At boundary</td><td style="font-size:11px">Lawyer review all outputs — mandatory</td></tr>
+          <tr class="dh"><td colspan="6">REVENUE INTELLIGENCE — asymmetric risk</td></tr>
+          <tr class="dri"><td>Lead scoring</td><td><span class="pill pri">Deploy now</span></td><td class="risk-lo">Low — missed leads</td><td class="risk-lo">Fully reversible</td><td class="risk-lo">Inside frontier</td><td style="font-size:11px">Monitor conversion rates monthly</td></tr>
+          <tr class="dri"><td>Pipeline forecasting</td><td><span class="pill pri">Deploy now</span></td><td class="risk-md">Medium — board reporting</td><td class="risk-md">Partially reversible</td><td class="risk-lo">Inside frontier</td><td style="font-size:11px">CFO reviews AI-generated forecast</td></tr>
+          <tr class="dri"><td>Pricing optimization</td><td><span class="pill p2">Build &amp; defend</span></td><td class="risk-hi">High — margin erosion</td><td class="risk-hi">Difficult on signed deals</td><td class="risk-md">At boundary</td><td style="font-size:11px">Senior commercial approval on all outputs</td></tr>
+          <tr class="dri"><td>Strategic pricing</td><td><span class="pill p2">Build &amp; defend</span></td><td class="risk-hi">Very high</td><td class="risk-hi">Largely irreversible</td><td class="risk-hi">Outside frontier risk</td><td style="font-size:11px">C-suite authority — AI as input only</td></tr>
+          <tr class="dh"><td colspan="6">MANUFACTURING ROBOTICS — physical risk overlay</td></tr>
+          <tr class="dmf"><td>Vision inspection (T1)</td><td><span class="pill p1">Pilot now</span></td><td class="risk-md">Medium — missed defects</td><td class="risk-md">Moderate (recall)</td><td class="risk-lo">Inside frontier</td><td style="font-size:11px">Statistical sampling; dual-mode fallback</td></tr>
+          <tr class="dmf"><td>Pick-and-place (T1)</td><td><span class="pill p1">Pilot now</span></td><td class="risk-hi">High — hardware safety</td><td class="risk-hi">Physical damage risk</td><td class="risk-md">At boundary</td><td style="font-size:11px">Human override always present; compliant hw only</td></tr>
+          <tr class="dmf"><td>Semi-structured assembly (T2)</td><td><span class="pill p2">Build toward</span></td><td class="risk-hi">High — product + safety</td><td class="risk-hi">Difficult</td><td class="risk-hi">Approaching collapse</td><td style="font-size:11px">Not deployable at production scale yet</td></tr>
+          <tr class="dmf"><td>General flex mfg (T3)</td><td><span class="pill p4">Monitor</span></td><td class="risk-hi">Very high</td><td class="risk-hi">Irreversible scenarios</td><td class="risk-hi">Outside current frontier</td><td style="font-size:11px">No production deployment justified</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- TAB 5: BOARD READINESS -->
+<div id="prc" class="panel">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px">
+    <div>
+      <p style="font-size:12px;font-weight:500;margin:0 0 10px">MIT Sloan six pre-conditions — score before any deployment commitment</p>
+      <div id="checklist">
+        <div class="cq"><div class="cb" onclick="tC(this)"></div><div><div style="font-size:13px;font-weight:500;margin-bottom:2px">Business problem defined</div><div style="font-size:11px;color:#6b7280;line-height:1.5">Target workflows identified, subproblems decomposed, AI solution matched to each. Not "AI everywhere" — specific displacement cases with economic rationale.</div></div></div>
+        <div class="cq"><div class="cb" onclick="tC(this)"></div><div><div style="font-size:13px;font-weight:500;margin-bottom:2px">Data is AI-ready</div><div style="font-size:11px;color:#6b7280;line-height:1.5">Datasets complete, governed, and curated. Quality scoring applied (perplexity pruning). Proprietary data identified and protected from unauthorized model training.</div></div></div>
+        <div class="cq"><div class="cb" onclick="tC(this)"></div><div><div style="font-size:13px;font-weight:500;margin-bottom:2px">Workforce configured for the frontier</div><div style="font-size:11px;color:#6b7280;line-height:1.5">Employees know which tasks are inside vs. outside the jagged frontier. Senior judgment governs consequential outputs — not junior AI fluency.</div></div></div>
+        <div class="cq"><div class="cb" onclick="tC(this)"></div><div><div style="font-size:13px;font-weight:500;margin-bottom:2px">Workflows have been redesigned</div><div style="font-size:11px;color:#6b7280;line-height:1.5">Not AI added to existing workflows. The workflow itself rebuilt around AI capabilities. Single largest EBIT driver — McKinsey regression across 25 attributes.</div></div></div>
+        <div class="cq"><div class="cb" onclick="tC(this)"></div><div><div style="font-size:13px;font-weight:500;margin-bottom:2px">KPIs defined and tracked</div><div style="font-size:11px;color:#6b7280;line-height:1.5">Well-defined KPIs including error rate, throughput, cost-per-cycle, and human override rate. McKinsey: most strongly correlated with EBIT impact at larger organizations.</div></div></div>
+        <div class="cq"><div class="cb" onclick="tC(this)"></div><div><div style="font-size:13px;font-weight:500;margin-bottom:2px">CEO / board governance in place</div><div style="font-size:11px;color:#6b7280;line-height:1.5">AI governance at C-suite and board level, not delegated to IT. Delegating implementation to IT is "a recipe for failure" — McKinsey. This is transformation, not technology deployment.</div></div></div>
+      </div>
+      <div class="score-box" id="score-display">Score: 0 / 6 pre-conditions met</div>
+    </div>
+    <div>
+      <p style="font-size:12px;font-weight:500;margin:0 0 10px">Kahneman two-tier AI strategy — fast experiments feed slow strategy</p>
+      <div class="tier-card" style="border-left:3px solid #059669">
+        <div class="tier-head" style="color:#065f46">Fast tier · now → 6 months</div>
+        <div class="tier-body">Run pilots in "Automate Now" quadrant. Deploy in highest-volume, lowest-signal-threshold workflows. Include Revenue Intelligence (CRM hygiene, lead scoring, pipeline forecasting) — these return fastest. Measure error rates, cost-per-cycle, and throughput. Capture data on what works.</div>
+      </div>
+      <div class="tier-card" style="border-left:3px solid #b45309">
+        <div class="tier-head" style="color:#92400e">Slow tier · now → 18 months</div>
+        <div class="tier-body">Build data curation infrastructure. Define proprietary data assets in "Build &amp; Defend" workflows. Establish governance architecture. Design workforce configuration for the jagged frontier. Set ROIC targets and KPI framework. Begin manufacturing robotics Tier 1 pilots where physical workflows qualify.</div>
+      </div>
+      <div class="tier-card" style="border-left:3px solid #374151">
+        <div class="tier-head">Capital allocation decision · board level</div>
+        <div class="tier-body">Sequence investment across four domains using the ROIC waterfall. Prioritize Revenue Intelligence early — different equation, faster returns. Physical AI pilots 2026–2027 for compliant-hardware structured tasks. Tier 2 manufacturing investment in 2027–2028. Reserve architectural regime decisions for 2028 planning cycle.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div><!-- end .content -->
+<footer class="author-footer">
+  <div><strong>Gary Rikard, MBA</strong> · Enterprise AI, workflow economics, and capital allocation</div>
+  <div class="af-right">
+    Interactive framework · April 2026<br>
+    <a href="https://www.linkedin.com/in/garyrikard" target="_blank" rel="noopener noreferrer" style="color:#374151;text-decoration:underline;text-underline-offset:2px">LinkedIn: garyrikard</a>
+  </div>
+</footer>
+</div><!-- end .wrap -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+var roicChart=null;
+function pS(id,btn){document.querySelectorAll('.panel').forEach(function(s){s.classList.remove('on')});document.querySelectorAll('.tab').forEach(function(b){b.classList.remove('on')});document.getElementById('p'+id).classList.add('on');btn.classList.add('on');if(id==='ro'&&!roicChart)initROIC()}
+function wL(lens,btn){document.querySelectorAll('.lv .lb').forEach(function(b){b.classList.remove('on')});btn.classList.add('on');document.getElementById('wl-cfo').style.display=lens==='cfo'?'block':'none';document.getElementById('wl-cto').style.display=lens==='cto'?'block':'none';document.getElementById('wl-risk').style.display=lens==='risk'?'block':'none'}
+function tC(el){el.classList.toggle('done');el.textContent=el.classList.contains('done')?'✓':'';var done=document.querySelectorAll('.cb.done').length;var total=document.querySelectorAll('.cb').length;var disp=document.getElementById('score-display');disp.textContent='Score: '+done+' / '+total+' pre-conditions met';var pct=done/total;if(pct>=0.83){disp.style.background='#d1fae5';disp.style.color='#065f46';disp.style.border='1px solid #6ee7b7'}else if(pct>=0.5){disp.style.background='#fef3c7';disp.style.color='#92400e';disp.style.border='1px solid #fcd34d'}else{disp.style.background='#f9fafb';disp.style.color='#374151';disp.style.border='1px solid #e5e7eb'}}
+function initROIC(){var ctx=document.getElementById('roic-c').getContext('2d');roicChart=new Chart(ctx,{type:'bubble',data:{datasets:[{label:'Automate now',backgroundColor:'rgba(5,150,105,0.75)',data:[{x:9,y:13,r:10,l:'Data entry / ETL'},{x:15,y:9,r:9,l:'Invoice & AP'},{x:18,y:8,r:9,l:'Tier 1 support'},{x:15,y:9,r:8,l:'Document gen'},{x:21,y:7,r:8,l:'Code gen'}]},{label:'Revenue intelligence',backgroundColor:'rgba(79,70,229,0.75)',data:[{x:4,y:60,r:9,l:'Pipeline forecasting'},{x:8,y:18,r:8,l:'Lead scoring'},{x:6,y:12,r:8,l:'Churn prediction'},{x:14,y:5,r:6,l:'Pricing optimization'}]},{label:'Build & defend',backgroundColor:'rgba(180,83,9,0.75)',data:[{x:24,y:6,r:7,l:'Compliance monitoring'},{x:30,y:7,r:6,l:'Contract analysis'}]},{label:'Protect / Physical AI',backgroundColor:'rgba(107,114,128,0.65)',data:[{x:36,y:9,r:5,l:'Research synthesis'},{x:24,y:6,r:5,l:'Vision inspection'},{x:36,y:7,r:4,l:'Pick-and-place'}]}]},options:{responsive:true,maintainAspectRatio:false,layout:{padding:{top:20,right:40}},plugins:{legend:{display:false},tooltip:{callbacks:{label:function(ctx){var d=ctx.raw;return(d.l||'')+' · '+d.x+' mo · '+d.y+'× ROIC'}}}},scales:{x:{min:0,max:50,ticks:{callback:function(v){return v+' mo'},font:{size:11},color:'#6b7280'},grid:{color:'rgba(0,0,0,.05)'},title:{display:true,text:'months to ROIC',color:'#6b7280',font:{size:11}}},y:{min:0,max:70,ticks:{callback:function(v){return v+'×'},font:{size:11},color:'#6b7280'},grid:{color:'rgba(0,0,0,.05)'},title:{display:true,text:'ROIC multiple (3-year)',color:'#6b7280',font:{size:11}}}}}})}
+</script>
+</body>
+</html>
